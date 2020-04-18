@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+body {
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #121212;
+}
+
+header, footer {
+  background-color: #191D26;
+  min-height: 66%;
+  color: #F8F8F8;
+}
+
+h1, h2 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+button {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid white;
+  font-weight: 300;
+}
+
+img.profile-picture {
+  width: 300px;
+  height: 300px;
+}

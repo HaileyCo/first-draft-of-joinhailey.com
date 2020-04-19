@@ -131,3 +131,7 @@ a.trippy.black {
 body.legal-notice ul {
   list-style: lower-alpha;
 }
+
+body.legal-notice footer ul {
+  list-style: none;
+}

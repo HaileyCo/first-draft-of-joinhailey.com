@@ -123,3 +123,7 @@ a.trippy.black {
   color: #070707;
   border: 0;
 }
+
+body.legal-notice ul {
+  list-style: lower-alpha;
+}

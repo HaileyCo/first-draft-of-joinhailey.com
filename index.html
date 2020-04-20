@@ -30,14 +30,14 @@
 
   </head>
   <body>
-    <header class="flex h-auto">
-      <div class="flex max-w-screen-lg m-auto mt-20">
+    <header class="flex min-h-screen lg:min-h-0">
+      <div class="flex content-center min-h-screen lg:min-h-0 max-w-screen-lg m-auto mt-20 lg:pb-40">
         <a href="/">
           <div class="absolute object-left-top mx-10">
-            <img class="gradient" />
+            <img class="gradient" src="/assets/hailey.svg" />
           </div>
         </a>
-        <div class="m-auto text-center pt-40 pb-10">
+        <div class="m-auto text-center py-40 text-3xl lg:text-xl">
           <h1>
             <ul class="typewriter hidden">
               <li>Innovators</li>
@@ -46,53 +46,65 @@
               <li>Founders</li>
               <li>Hailees</li>
             </ul>
-            <span class="title m-0 p-0">Disruptors</span><span>, wanted.</span>
+            <span class="title m-0 p-0">Disruptors</span><span>,</span>
+            <span class="block lg:inline-block"> wanted.</span>
           </h1>
-          <h4 class="py-8 w-4/6 m-auto">
+          <h4 class="pt-20 pb-10 m-auto w-5/6 text-5xl
+                    lg:pt-10 lg:pb-20 lg:text-xl lg:w-4/6
+                    ">
             Hailey is a daring community of disruptors, innovators, hackers,
             lawyers, designers, and founders, joined to  explore and develop
             creative solutions to issues at the intersection of law and
             technology.
           </h4>
-          <a class="border-none trippy black w-auto md:m-20 lg:md-20 sm:m-2 pt-2 pb-3 px-8 typeform-share link" href="https://joinhailey.typeform.com/to/DRzg4Z" data-mode="popup" data-submit-close-delay="2" target="_blank">apply for membership </a>
+          <div class="">
+            <a class="border-none trippy black
+                      w-3/5 my-20 pt-2 pb-3 px-8
+                      text-5xl
+                      lg:text-xl lg:w-4/12 lg:m-0
+                      typeform-share link"
+              href="https://joinhailey.typeform.com/to/DRzg4Z"
+              data-mode="popup"
+              data-submit-close-delay="2"
+              target="_blank">apply for membership
+            </a>
+          </div>
         </div>
       </div>
     </header>
-      <svg class="swing" width="100%" height="100" viewBox="0 0 500 100" preserveAspectRatio="none">
-        <rect x="0" y="0" width="500" height="100" fill="#070707" clip-path="url(#shape)" />
-      </svg>
 
     <section class="flex h-auto pt-20">
-      <div class="m-auto text-center w-3/4">
+      <div class="m-auto text-left w-3/4 text-4xl
+                  lg:text-center lg:text-xl
+                  ">
         <section>
-          <h2> Meet Your Community </h2>
-          <p class="pt-5">
+          <h2 class="leading-none pt-10 pb-10 lg:pb-2"> Meet Your Community </h2>
+          <p class="pt-5 text-5xl lg:text-xl">
           Your next cofounders and mentors are already here. Check out what they have to say:
           </p>
         </section>
       </div>
     </section>
 
-    <section id="community" class="flex h-auto py-20">
+    <section id="community" class="flex h-auto pt-20">
       <div class="w-full">
-          <ul class="m-auto max-w-screen-xl flex flex-wrap justify-center text-center">
-            <li class="w-3/5 p-10">
+          <ul class="m-auto max-w-screen-xl flex flex-wrap justify-center text-left
+                     lg:text-center
+            ">
+            <li class="w-4/5 py-20 lg:p-10 lg:w-3/5">
               <div class="quote py-5">“</div>
-              <div class="text-2xl text-grey"> Linn, Malin, and their team have done an incredible job at setting up this community!
+              <div class="text-5xl lg:text-2xl text-grey"> Linn, Malin, and their team have done an incredible job at setting up this community!
               Linn, Malin, and their team have done an incredible job at setting up this community! </div>
-              <div class="pt-3"> Per Persson, <span class="text-medium"> Leading Expert in Legalese </span> </div>
+              <div class="text-4xl lg:text-lg pt-3"> Per Persson,
+                <span class="lg:text-medium"> Leading Expert in Legalese </span> </div>
             </li>
-            <li class="w-3/5 p-10">
+            <li class="w-4/5 py-10 lg:p-10 lg:w-3/5">
               <div class="quote py-5">“</div>
-              <div class="text-2xl text-grey"> Linn, Malin, and their team have done an incredible job at setting up this community! </div>
-              <div class="pt-3"> Per Persson, <span class="text-medium"> Leading Expert in Legalese </span> </div>
-            </li>
-            <li class="w-3/5 p-10">
-              <div class="quote py-5">“</div>
-              <div class="text-2xl text-grey"> Linn, Malin, and their team have done an incredible job at setting up this community!
-              Linn, Malin, and their team have done an incredible job at setting up this community!
+              <div class="text-5xl lg:text-2xl text-grey"> Linn, Malin, and their team have done an incredible job at setting up this community!
               Linn, Malin, and their team have done an incredible job at setting up this community! </div>
-              <div class="pt-3"> Per Persson, <span class="text-medium"> Leading Expert in Legalese </span> </div>
+              <div class="text-4xl lg:text-lg pt-3"> Per Persson,
+                <span class="lg:text-medium"> Leading Expert in Legalese </span>
+              </div>
             </li>
           </ul>
       </div>
@@ -100,90 +112,105 @@
 
     <section id="team" class="flex h-auto mt-20 py-20">
       <div class="w-full">
-        <div class="m-auto text-center w-1/2 mb-20">
+        <div class="m-auto w-3/4 text-4xl my-20
+                    lg:text-center lg:w-1/2 lg:text-xl lg:mb-20
+                    ">
           <section>
-            <h2> Team </h2>
-            <p class="pt-5">
-            Hailey is ran by a ragtag team of passionate individuals from all
-            across the industry. We are also super approachable, just send us an
-            email!
+            <h2 class="leading-none"> Hailey Team </h2>
+            <p class="pt-5 text-5xl lg:text-xl">
+              Hailey is ran by a ragtag team of passionate individuals from all
+              across the industry. We are also super approachable, just send us
+              an email!
             </p>
           </section>
         </div>
-          <ul class="m-auto w-3/4 flex flex-wrap justify-center">
-            <li class="p-10">
-              <img class="profile-picture rounded-full mx-auto" src="/assets/linn.jpg"/>
-              <div class="pt-3"> Linn Alfredsson </div>
-              <div class="text-bold text-sm"> Cofounder / Business Lead </div>
-              <div class="text-sm"> ex-Berkeley, Tech Academy Nordic </div>
+          <ul class="m-auto flex flex-wrap text-left justify-center">
+            <li class="px-10 py-16 w-4/5 lg:w-1/5 lg:p-10">
+              <img class="w-full lg:rounded-full lg:mx-auto" src="/assets/linn.jpg"/>
+              <div class="pt-8 font-medium text-6xl lg:text-xl lg:pt-3"> Linn Alfredsson </div>
+              <div class="text-5xl lg:text-sm"> Cofounder / Business Lead </div>
+              <div class="text-4xl lg:text-sm"> ex-Berkeley, Tech Academy Nordic </div>
             </li>
-            <li class="p-10">
-              <img class="profile-picture max-w-xs rounded-full mx-auto" src="/assets/malin.jpg"/>
-              <div class="pt-3"> Malin Männikkö </div>
-              <div class="text-bold text-sm"> Cofounder / Product Lead </div>
-              <div class="text-sm"> STHLM Legal Hackers, SSB </div>
+            <li class="px-10 py-16 w-4/5 lg:w-1/5 lg:p-10">
+              <img class="w-full lg:rounded-full lg:mx-auto" src="/assets/malin.jpg"/>
+              <div class="pt-8 font-medium text-6xl lg:text-xl lg:pt-3"> Malin Männikkö </div>
+              <div class="text-5xl lg:text-sm"> Cofounder / Product Lead </div>
+              <div class="text-4xl lg:text-sm"> Stockholm Legal Hackers, Stockholm Startup Bootcamp </div>
             </li>
-            <li class="p-10">
-              <img class="profile-picture rounded-full mx-auto" src="/assets/silvia.jpg"/>
-              <div class="pt-3"> Silvia A. Carretta  </div>
-              <div class="text-bold text-sm"> Community Lead </div>
-              <div class="text-sm"> IP and Tech Lab / Bloomer Acc.</div>
+            <li class="px-10 py-16 w-4/5 lg:w-1/5 lg:p-10">
+              <img class="w-full lg:rounded-full lg:mx-auto" src="/assets/silvia.jpg"/>
+              <div class="pt-8 font-medium text-6xl lg:text-xl lg:pt-3"> Silvia A. Carretta </div>
+              <div class="text-5xl lg:text-sm"> Community Lead </div>
+              <div class="text-4xl lg:text-sm"> IP and Tech Lab / Bloomer Accelerator </div>
             </li>
             </li>
           </ul>
-          <ul class="m-auto w-3/4 flex flex-wrap justify-center">
-            <li class="p-10">
-              <img class="profile-picture rounded-full mx-auto" src="/assets/leandro.jpg"/>
-              <div class="pt-3"> Leandro Ostera </div>
-              <div class="text-bold text-sm"> Tech Lead </div>
-              <div class="text-bold text-sm"> ex-Spotify, Klarna </div>
+          <ul class="m-auto flex flex-wrap justify-center text-left">
+            <li class="px-10 py-16 w-4/5 lg:w-1/5 lg:p-10">
+              <img class="w-full lg:rounded-full lg:mx-auto" src="/assets/maria.jpg"/>
+              <div class="pt-8 font-medium text-6xl lg:text-xl lg:pt-3"> Maria Möller </div>
+              <div class="text-5xl lg:text-sm"> Design Lead </div>
+              <div class="text-4xl lg:text-sm"> School of Arts - Malmö </div>
             </li>
-            <li class="p-10">
-              <img class="profile-picture rounded-full mx-auto" src="/assets/maria.jpg"/>
-              <div class="pt-3"> Maria Moller </div>
-              <div class="text-bold text-sm"> Design Lead </div>
+            <li class="px-10 py-16 w-4/5 lg:w-1/5 lg:p-10">
+              <img class="w-full lg:rounded-full lg:mx-auto" src="/assets/leandro.jpg"/>
+              <div class="pt-8 font-medium text-6xl lg:text-xl lg:pt-3"> Leandro Ostera </div>
+              <div class="text-5xl lg:text-sm"> Tech Lead </div>
+              <div class="text-4xl lg:text-sm"> ex-Spotify, Klarna</div>
             </li>
           </ul>
       </div>
     </section>
 
-    <section class="flex h-auto mt-24 pb-14">
-      <div class="m-auto text-center w-1/2 sm:w-full">
+    <section class="flex h-auto py-40">
+        <div class="m-auto w-3/4 text-4xl
+                    text-center
+                    lg:w-full lg:text-xl
+                    ">
         <section>
           <h3> Up for the challenge? </h3>
-          <p class="pt-3 w-1/2 m-auto">
+          <p class="pt-3 w-full text-5xl lg:text-xl lg:w-1/2 m-auto">
           Do you have an idea for a legal tech tool, but no teammates? Are you
           in need of inspiration from other legal tech enthusiasts?
           </p>
-          <a class="border-none trippy w-auto md:m-10 lg:md-10 sm:m-2 pt-2 pb-3 px-8 typeform-share link" href="https://joinhailey.typeform.com/to/DRzg4Z" data-mode="popup" data-submit-close-delay="2" target="_blank">sign me up</a>
+          <div class="m-auto w-3/5 pt-20 lg:pt-10">
+          <a class="trippy
+                    w-full 
+                    pt-2 pb-3 px-8
+                    text-5xl
+                    lg:text-xl lg:w-4/12 lg:m-0
+                    typeform-share link"
+            href="https://joinhailey.typeform.com/to/DRzg4Z"
+            data-mode="popup"
+            data-submit-close-delay="2"
+            target="_blank">sign me up
+          </a>
+          </div>
         </section>
       </div>
     </section>
 
-    <svg class="swing" style="transform: scale(1, -1)" width="100%" height="100" viewBox="0 0 500 100" preserveAspectRatio="none">
-      <rect x="0" y="0" width="500" height="100" fill="#070707" clip-path="url(#shape)" />
-    </svg>
-    <footer class="flex h-auto pb-20 pt-10">
-      <div class="w-full">
-          <ul class="m-auto w-3/4 flex flex-wrap justify-center">
-            <li class="px-10 py-5">
-              <a href="/"><img class="gradient" /></a>
+    <footer class="flex h-auto min-h-screen lg:min-h-0 py-20 lg:pt-10">
+      <div class="w-full text-5xl lg:text-sm flex flex-wrap content-center">
+          <ul class="m-auto w-full lg:w-3/4 flex flex-wrap justify-center">
+            <li class="p-20 lg:px-10 lg:py-5">
+              <a href="/"><img class="gradient" src="/assets/hailey.svg" /></a>
             </li>
           </ul>
-          <ul class="m-auto w-3/4 flex flex-wrap justify-center">
-            <li class="p-10">
-              <a href="/legal-notice.html" class="text-bold text-sm"> Legal Notice </a>
+          <ul class="m-auto text-center lg:text-left lg:w-3/4 flex flex-wrap justify-center">
+            <li class="p-10 w-full lg:w-auto">
+              <a href="/legal-notice.html" class="text-bold"> Legal Stuff </a>
             </li>
-            <li class="p-10">
-              <a href="https://linkedin.com/company/haileycommunity" class="text-bold text-sm"> LinkedIn </a>
-              <a href="https://instagram.com/joinhailey" class="text-bold text-sm"> Instagram </a>
-              <a href="https://twitter.com/joinhailey" class="text-bold text-sm"> Twitter </a>
+            <li class="p-10 w-full lg:w-auto">
+              <a href="https://linkedin.com/company/haileycommunity" class="text-bold "> LinkedIn </a>
+              <a href="https://instagram.com/joinhailey" class="text-bold "> Instagram </a>
+              <a href="https://twitter.com/joinhailey" class="text-bold "> Twitter </a>
             </li>
-            <li class="p-10">
-              <div class="text-bold text-sm"> Hailey HQ </div>
-              <div class="text-bold text-sm"> Iskanegränd 2 </div>
-              <div class="text-bold text-sm"> Hägersten, Stockholm </div>
-              <div class="text-bold text-sm"> Sweden. </div>
+            <li class="p-10 w-full lg:w-auto">
+              <div class="text-bold"> Hailey HQ </div>
+              <div class="text-bold"> Iskanegränd 2 </div>
+              <div class="text-bold"> Hägersten, Stockholm </div>
+              <div class="text-bold"> Sweden. </div>
             </li>
           </ul>
       </div>

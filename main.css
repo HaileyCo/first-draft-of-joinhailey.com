@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,500,600');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
 
 body {
   font-size: 20px;
@@ -21,45 +21,21 @@ svg.swing {
   height: 100;
 }
 
-img.gradient {
-  width: 120px;
-  height: 120px;
-
-  background: linear-gradient(35deg, #70ceb6, #b7ce70, #ce7070, #b570ce, #707ace);
-  background-size: 500% 500%;
-
-  -webkit-animation: LogoGradient 13s ease infinite;
-  -moz-animation: LogoGradient 13s ease infinite;
-  animation: LogoGradient 13s ease infinite;
+span.brand {
+  color: #A553A7;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 100px;
 }
 
 @media (min-width: 1024px) {
-  img.gradient {
-    width: 50px;
-    height: 50px;
-
+  span.brand {
+    font-size: 30px;
   }
-
-}
-
-@-webkit-keyframes LogoGradient {
-    0%{background-position:0% 91%}
-    50%{background-position:100% 10%}
-    100%{background-position:0% 91%}
-}
-@-moz-keyframes LogoGradient {
-    0%{background-position:0% 91%}
-    50%{background-position:100% 10%}
-    100%{background-position:0% 91%}
-}
-@keyframes LogoGradient {
-    0%{background-position:0% 91%}
-    50%{background-position:100% 10%}
-    100%{background-position:0% 91%}
 }
 
 header, footer {
-  background-color: #070707;
+  background-color: #1E1E1E;
   color: #F8F8F8;
   max-height: 700px;
 }
@@ -105,15 +81,9 @@ a.trippy {
   background-color: rgba(0,0,0,0);
   border: 1px solid white;
 
-  font-weight: 300;
   font-variant: all-small-caps;
 
-  background: linear-gradient(35deg, #70ceb6, #b7ce70, #ce7070, #b570ce, #707ace);
-  background-size: 500% 500%;
-
-  -webkit-animation: LogoGradient 50s ease infinite;
-  -moz-animation: LogoGradient 50s ease infinite;
-  animation: LogoGradient 50s ease infinite;
+  background-color: #A553A7;
 
   color: #f8f8f8;
   font-weight: 600;
@@ -122,7 +92,6 @@ a.trippy {
 }
 
 a.trippy.black {
-  color: #070707;
   border: 0;
 }
 

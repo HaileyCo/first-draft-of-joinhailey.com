@@ -5,7 +5,7 @@ body {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
-  color: #070707;
+  color: #1E1E1E;
 }
 
 svg {
@@ -70,7 +70,7 @@ div.quote {
 }
 
 section#team {
-  background-color: #070707;
+  background-color: #1E1E1E;
 
   color: #f8f8f8;
 }

@@ -111,3 +111,18 @@ body.legal-notice footer ul {
 body.legal-notice header {
   min-height: 100px;
 }
+
+body.legal-notice a {
+  color: #A553A7;
+  border-bottom: 1px dotted #A553A7;
+}
+
+body.legal-notice header a, body.legal-notice footer a {
+  border: none;
+}
+
+body.legal-notice h3 {
+  padding-bottom: 1rem;
+  line-height: 1;
+
+}

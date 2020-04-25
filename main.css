@@ -99,6 +99,14 @@ a.trippy.black {
   border: 0;
 }
 
+body.legal-notice p + p {
+  padding-top: 1.25rem;
+}
+
+body.legal-notice h3 + p {
+  padding-top: 1.25rem;
+}
+
 body.legal-notice ul {
   list-style: lower-alpha;
   padding: 2rem;
@@ -124,5 +132,8 @@ body.legal-notice header a, body.legal-notice footer a {
 body.legal-notice h3 {
   padding-bottom: 1rem;
   line-height: 1;
+}
 
+body.legal-notice section {
+  line-height: 1.7;
 }

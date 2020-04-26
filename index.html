@@ -18,13 +18,14 @@
 
   </head>
   <body>
-    <section class="flex text-sm min-h-0 p-12 w-full text-left hidden" id="cookie-monster">
+    <section class="hidden flex text-sm min-h-0 p-12 w-full text-left" id="cookie-monster-desktop">
       <p class="w-3/5">
-      We use cookies on our website to remember you, show you content we think you will like and help you to use the site. For more details, please see
+      We use cookies on our website to remember you, show you content we think
+      you will like and help you to use the site. For more details, please see
       <a href="/legal-notice.html">our cookie policy</a>.
       </p>
       <div class="flex w-2/5 justify-center">
-        <a id="accept-cookies"
+        <a id="accept-cookies-desktop"
            class="trippy
                   text-center
                   w-3/5 my-20 pt-2 pb-3 px-8
@@ -36,19 +37,24 @@
       </div>
     </section>
 
-    <section class="hidden min-h-0 p-10 w-full text-center" id="cookie-monster">
-      <span class="font-bold">Cookie monster! 🍪</span>
-      We use cookies, for more details read
-      <a href="/legal-notice.html">our cookie policy</a>.
-      <a id="accept-cookies"
-         class="trippy inverted
-                w-3/5 my-20 pt-2 pb-3 px-8
-                text-5xl
-                lg:text-xl lg:w-auto lg:mx-5 lg:my-0"
-         >
-        Accept All Cookies
-      </a>
+    <section class="hidden min-h-0 py-20 pb-10 w-full fixed bottom-0 left-0 text-center text-5xl" id="cookie-monster-mobile">
+      <section class="flex flex-wrap justify-center">
+        <p class="font-bold pb-12">Cookie monster! 🍪</p>
+        <p class="w-10/12">
+           We use cookies, for more details <br /> read
+           <a href="/legal-notice.html">our cookie policy</a>.
+        </p>
+        <a id="accept-cookies-mobile"
+           class="trippy
+                  w-3/5 my-20 pt-2 pb-3 px-8
+                  text-5xl
+                  lg:text-xl lg:w-auto lg:mx-5 lg:my-0"
+           >
+           Accept All Cookies
+        </a>
+        </section>
     </section>
+
 
     <header class="flex min-h-screen lg:min-h-0">
       <div class="flex content-center min-h-screen lg:min-h-0 max-w-screen-lg m-auto mt-20 lg:pb-40">
@@ -241,31 +247,48 @@
     </footer>
 
     <script>
-      const cookie_monster = document.querySelector('section#cookie-monster')
+      const is_mobile_device = () =>
+        (typeof window.orientation !== "undefined")
+        || (navigator.userAgent.indexOf('IEMobile') !== -1)
+
+      const [cookie_monster, accept_cookies] = (() => {
+        if (is_mobile_device()) {
+          return [
+            document.querySelector('section#cookie-monster-mobile'),
+            document.querySelector('a#accept-cookies-mobile')
+          ]
+        }
+        return [
+          document.querySelector('section#cookie-monster-desktop'),
+          document.querySelector('a#accept-cookies-desktop')
+        ]
+      })()
 
       const handle_cookies_accepted = () => {
         cookie_monster.classList.add("slide-out")
         mark_cookies_as_accepted()
+        setup_google_analytics()
+        remove_handler()
       }
 
       const mark_cookies_as_accepted = () =>
         localStorage.setItem("se.hailey.www.cookies.accepted", true)
 
-      const has_accepted_cookies = () =>
-        localStorage.getItem("se.hailey.www.cookies.accepted") || false;
+      const has_accepted_cookies = () => false
+        //localStorage.getItem("se.hailey.www.cookies.accepted") || false;
 
-      const show_cookie_monster = () => {
+      const show_cookie_monster = () =>
         cookie_monster.classList.remove('hidden')
-      }
 
-      const setup_handler = () => {
-        document
-          .getElementById('accept-cookies')
-          .addEventListener('click', handle_cookies_accepted)
-      }
+      const setup_handler = () =>
+        accept_cookies.addEventListener('click', handle_cookies_accepted)
+
+      const remove_handler = () =>
+        accept_cookies.removeEventListener('click', handle_cookies_accepted)
 
       const setup_cookie_monster = () => {
         if (has_accepted_cookies()) {
+          setup_google_analytics()
         } else {
           show_cookie_monster()
           setup_handler()

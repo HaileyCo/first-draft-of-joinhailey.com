@@ -144,12 +144,12 @@ body.legal-notice section {
   line-height: 1.7;
 }
 
-section#cookie-monster {
+section#cookie-monster-desktop, section#cookie-monster-mobile {
   background-color: #2a2a2b;
   color: #f8f8f8;
 }
 
-section#cookie-monster a#accept-cookies {
+section#cookie-monster-desktop a#accept-cookies {
   max-height: 54px;
 }
 

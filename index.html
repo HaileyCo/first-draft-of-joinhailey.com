@@ -5,31 +5,51 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-L3S05HFTRJ"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-L3S05HFTRJ');
+      function setup_google_analytics() {
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-L3S05HFTRJ');
+      }
     </script>
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link href="/main.css" rel="stylesheet">
 
-<svg>
-  <defs>
-    <clipPath id="shape"><path d="M0,0 L0,40 Q250,80 500,40 L500,0 Z" /></clipPath>
-    <clipPath id="mask">
-      <path d="M21.08 30.48C22.28 28 24.4533 26.76 27.6 26.76C29.68 26.76 31.1467 27.28 32 28.32C32.4533 28.8267 32.7733 29.4933 32.96 30.32C33.1733 31.12 33.28 32.1867 33.28 33.52V44.28C33.28 45.3733 33.4667 46.1333 33.84 46.56C34.2133 46.96 34.88 47.16 35.84 47.16V48C33.0667 47.8933 31.3067 47.84 30.56 47.84C29.6533 47.84 27.92 47.8933 25.36 48V47.16C26.16 47.16 26.72 46.96 27.04 46.56C27.36 46.1333 27.52 45.3733 27.52 44.28V31.84C27.52 30.7467 27.3333 29.92 26.96 29.36C26.6133 28.8 25.9733 28.52 25.04 28.52C23.92 28.52 22.9733 28.96 22.2 29.84C21.4533 30.6933 21.08 31.7867 21.08 33.12V44.28C21.08 45.3733 21.24 46.1333 21.56 46.56C21.88 46.96 22.44 47.16 23.24 47.16V48C20.68 47.8933 19.0267 47.84 18.28 47.84C17.3733 47.84 15.5333 47.8933 12.76 48V47.16C13.6933 47.16 14.3467 46.96 14.72 46.56C15.12 46.1333 15.32 45.3733 15.32 44.28V21.52C15.32 20.2933 15.12 19.4 14.72 18.84C14.3467 18.28 13.6933 18 12.76 18V17.16C13.6133 17.24 14.44 17.28 15.24 17.28C17.56 17.28 19.5067 17.0933 21.08 16.72V30.48ZM41.7359 42.4C42.7759 42.4 43.6026 42.68 44.2159 43.24C44.8293 43.7733 45.1359 44.52 45.1359 45.48C45.1359 46.44 44.8293 47.2 44.2159 47.76C43.6026 48.2933 42.7759 48.56 41.7359 48.56C40.6959 48.56 39.8693 48.2933 39.2559 47.76C38.6426 47.2 38.3359 46.44 38.3359 45.48C38.3359 44.52 38.6426 43.7733 39.2559 43.24C39.8693 42.68 40.6959 42.4 41.7359 42.4Z"/>
-    </clipPath>
-    <clipPath id="team-curve">
-      <path d="M0 204.5C737.397 178.201 982.986 132.4 1147 0V949.5C622.881 956.444 302.044 932.16 0 1171V204.5Z" />
-    </clipPath>
-  </defs>
-</svg>
-
-
   </head>
   <body>
+    <section class="flex text-sm min-h-0 p-12 w-full text-left hidden" id="cookie-monster">
+      <p class="w-3/5">
+      We use cookies on our website to remember you, show you content we think you will like and help you to use the site. For more details, please see
+      <a href="/legal-notice.html">our cookie policy</a>.
+      </p>
+      <div class="flex w-2/5 justify-center">
+        <a id="accept-cookies"
+           class="trippy
+                  text-center
+                  w-3/5 my-20 pt-2 pb-3 px-8
+                  text-xl
+                  lg:text-sm lg:w-auto lg:mx-5 lg:px-12 lg:my-0"
+           >
+          Accept All Cookies
+        </a>
+      </div>
+    </section>
+
+    <section class="hidden min-h-0 p-10 w-full text-center" id="cookie-monster">
+      <span class="font-bold">Cookie monster! 🍪</span>
+      We use cookies, for more details read
+      <a href="/legal-notice.html">our cookie policy</a>.
+      <a id="accept-cookies"
+         class="trippy inverted
+                w-3/5 my-20 pt-2 pb-3 px-8
+                text-5xl
+                lg:text-xl lg:w-auto lg:mx-5 lg:my-0"
+         >
+        Accept All Cookies
+      </a>
+    </section>
+
     <header class="flex min-h-screen lg:min-h-0">
       <div class="flex content-center min-h-screen lg:min-h-0 max-w-screen-lg m-auto mt-20 lg:pb-40">
         <a href="/">
@@ -78,7 +98,8 @@
         <section>
           <h2 class="leading-none pt-10 pb-10 lg:pb-2"> Meet Your Community </h2>
           <p class="pt-5 text-5xl lg:text-xl">
-          Your next cofounders and mentors are already here. Check out what they have to say:
+          Your next cofounders and mentors are already here. Check out what
+          they have to say:
           </p>
         </section>
       </div>
@@ -91,15 +112,22 @@
             ">
             <li class="py-20 lg:p-10 lg:w-3/5">
               <div class="quote py-5">“</div>
-              <div class="text-5xl lg:text-2xl text-grey"> Linn, Malin, and their team have done an incredible job at setting up this community!
-              Linn, Malin, and their team have done an incredible job at setting up this community! </div>
+              <div class="text-5xl lg:text-2xl text-grey">
+                Linn, Malin, and their team have done an incredible job at
+                setting up this community!  Linn, Malin, and their team have
+                done an incredible job at setting up this community!
+              </div>
               <div class="text-4xl lg:text-lg pt-3"> Per Persson,
-                <span class="lg:text-medium"> Leading Expert in Legalese </span> </div>
+                <span class="lg:text-medium"> Leading Expert in Legalese </span>
+              </div>
             </li>
             <li class="py-10 lg:p-10 lg:w-3/5">
               <div class="quote py-5">“</div>
-              <div class="text-5xl lg:text-2xl text-grey"> Linn, Malin, and their team have done an incredible job at setting up this community!
-              Linn, Malin, and their team have done an incredible job at setting up this community! </div>
+              <div class="text-5xl lg:text-2xl text-grey">
+                Linn, Malin, and their team have done an incredible job at
+                setting up this community! Linn, Malin, and their team have
+                done an incredible job at setting up this community!
+              </div>
               <div class="text-4xl lg:text-lg pt-3"> Per Persson,
                 <span class="lg:text-medium"> Leading Expert in Legalese </span>
               </div>
@@ -188,32 +216,66 @@
 
     <footer class="flex h-auto min-h-screen lg:min-h-0 py-20 lg:pt-10">
       <div class="w-full text-5xl lg:text-sm flex flex-wrap content-center">
-          <ul class="m-auto w-full lg:w-3/4 flex flex-wrap justify-center">
-            <li class="p-20 lg:px-10 lg:py-5">
-              <a href="/"><img class="gradient" src="/assets/hailey.svg" /></a>
-            </li>
-          </ul>
-          <ul class="m-auto text-center lg:text-left lg:w-3/4 flex flex-wrap justify-center">
-            <li class="p-10 w-full lg:w-auto">
-              <a href="/legal-notice.html" class="text-bold"> Legal Stuff </a>
-            </li>
-            <li class="p-10 w-full lg:w-auto">
-              <a href="https://linkedin.com/company/haileycommunity" class="text-bold "> LinkedIn </a>
-              <a href="https://instagram.com/joinhailey" class="text-bold "> Instagram </a>
-              <a href="https://twitter.com/joinhailey" class="text-bold "> Twitter </a>
-            </li>
-            <li class="p-10 w-full lg:w-auto">
-              <div class="text-bold"> Hailey HQ </div>
-              <div class="text-bold"> Iskanegränd 2 </div>
-              <div class="text-bold"> Hägersten, Stockholm </div>
-              <div class="text-bold"> Sweden. </div>
-            </li>
-          </ul>
+        <ul class="m-auto w-full lg:w-3/4 flex flex-wrap justify-center">
+          <li class="p-20 lg:px-10 lg:py-5">
+            <a href="/"><img class="gradient" src="/assets/hailey.svg" /></a>
+          </li>
+        </ul>
+        <ul class="m-auto text-center lg:text-left lg:w-3/4 flex flex-wrap justify-center">
+          <li class="p-10 w-full lg:w-auto">
+            <a href="/legal-notice.html" class="text-bold"> Legal Stuff </a>
+          </li>
+          <li class="p-10 w-full lg:w-auto">
+            <a href="https://linkedin.com/company/haileycommunity" class="text-bold "> LinkedIn </a>
+            <a href="https://instagram.com/joinhailey" class="text-bold "> Instagram </a>
+            <a href="https://twitter.com/joinhailey" class="text-bold "> Twitter </a>
+          </li>
+          <li class="p-10 w-full lg:w-auto">
+            <div class="text-bold"> Hailey HQ </div>
+            <div class="text-bold"> Iskanegränd 2 </div>
+            <div class="text-bold"> Hägersten, Stockholm </div>
+            <div class="text-bold"> Sweden. </div>
+          </li>
+        </ul>
       </div>
     </footer>
 
     <script>
+      const cookie_monster = document.querySelector('section#cookie-monster')
 
+      const handle_cookies_accepted = () => {
+        cookie_monster.classList.add("slide-out")
+        mark_cookies_as_accepted()
+      }
+
+      const mark_cookies_as_accepted = () =>
+        localStorage.setItem("se.hailey.www.cookies.accepted", true)
+
+      const has_accepted_cookies = () =>
+        localStorage.getItem("se.hailey.www.cookies.accepted") || false;
+
+      const show_cookie_monster = () => {
+        cookie_monster.classList.remove('hidden')
+      }
+
+      const setup_handler = () => {
+        document
+          .getElementById('accept-cookies')
+          .addEventListener('click', handle_cookies_accepted)
+      }
+
+      const setup_cookie_monster = () => {
+        if (has_accepted_cookies()) {
+        } else {
+          show_cookie_monster()
+          setup_handler()
+        }
+      }
+
+      setup_cookie_monster()
+    </script>
+
+    <script>
       const write_character = (char, target) => {
         target.innerHTML += char
       }

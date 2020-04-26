@@ -12,6 +12,12 @@ b {
   font-weight: 600;
 }
 
+a {
+  cursor: pointer;
+  color: #A553A7;
+  border-bottom: 1px dotted #A553A7;
+}
+
 svg {
   border: 0;
   margin: 0;
@@ -83,7 +89,6 @@ a.trippy {
   display: inline-block;
 
   background-color: rgba(0,0,0,0);
-  border: 1px solid white;
 
   font-variant: all-small-caps;
 
@@ -93,6 +98,12 @@ a.trippy {
   font-weight: 600;
 
   border-radius: 100px;
+}
+
+a.inverted {
+  background-color: #f8f8f8;
+  color: #A553A7;
+  border: 1px solid #A553A7;
 }
 
 a.trippy.black {
@@ -120,11 +131,6 @@ body.legal-notice header {
   min-height: 100px;
 }
 
-body.legal-notice a {
-  color: #A553A7;
-  border-bottom: 1px dotted #A553A7;
-}
-
 body.legal-notice header a, body.legal-notice footer a {
   border: none;
 }
@@ -136,4 +142,26 @@ body.legal-notice h3 {
 
 body.legal-notice section {
   line-height: 1.7;
+}
+
+section#cookie-monster {
+  background-color: #2a2a2b;
+  color: #f8f8f8;
+}
+
+section#cookie-monster a#accept-cookies {
+  max-height: 54px;
+}
+
+.slide-out {
+  overflow: hidden;
+  animation: SlideOut 0.1s ease-in 1 forwards;
+}
+
+@keyframes SlideOut {
+  to {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 0;
+  }
 }

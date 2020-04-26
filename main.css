@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:700');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,500');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600,500,700');
 
 body {
   font-size: 20px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
+  background-color: #f8f8f8;
   color: #1E1E1E;
 }
 
@@ -33,7 +33,7 @@ svg.swing {
 
 span.brand {
   color: #A553A7;
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 700;
   font-size: 100px;
 }
@@ -52,10 +52,11 @@ header, footer {
 
 footer a {
   display: block;
+  border: none;
 }
 
 h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 700;
 }
 
@@ -73,7 +74,7 @@ h3 {
 }
 
 div.quote {
-  font-family: 'Playfair Display', serif;
+  font-family: 'Open Sans', serif;
   font-weight: 700;
   font-size: 150px;
   line-height: 0;

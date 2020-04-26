@@ -11,6 +11,8 @@
         gtag('js', new Date());
         gtag('config', 'G-L3S05HFTRJ');
       }
+
+      setup_google_analytics()
     </script>
 
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
@@ -271,7 +273,6 @@
       const handle_cookies_accepted = () => {
         cookie_monster.classList.add("slide-out")
         mark_cookies_as_accepted()
-        setup_google_analytics()
         remove_handler()
       }
 
